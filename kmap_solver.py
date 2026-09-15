@@ -96,6 +96,12 @@ def solve(filename):
         print("Empty matrix")
         return
 
+    # Printing the K-Map grid
+    print("\nK-Map Grid:")
+    for row in matrix:
+        print(" ".join(map(str, row)))
+    print("-" * 25 + "\nSimplified Expression:")
+
     R = len(matrix)
     C = len(matrix[0])
     n = int(math.log2(R * C))
